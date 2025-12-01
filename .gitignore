@@ -1,0 +1,16 @@
+node_modules
+dist
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.DS_Store
+
+backend/node_modules
+backend/dist
+backend/.env
+backend/.env.local  
+backend/.env.development
+backend/.env.test
+backend/.env.production
