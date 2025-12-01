@@ -1,0 +1,13 @@
+// prisma/schema.prisma
+// Define your database models
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+

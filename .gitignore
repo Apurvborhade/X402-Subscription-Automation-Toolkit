@@ -1,16 +1,56 @@
-node_modules
-dist
-.env
-.env.local
-.env.development
-.env.test
-.env.production
-.DS_Store
+# Node modules and output folders
+node_modules/
+dist/
+coverage/
+build/
+tmp/
+.temp/
+.cache/
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tsbuildinfo
 
-backend/node_modules
-backend/dist
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Prisma files
+prisma/dev.db
+prisma/dev.sqlite
+
+# Generated & compiled backend files
+backend/node_modules/
+backend/dist/
+backend/coverage/
+backend/build/
+backend/tmp/
 backend/.env
-backend/.env.local  
-backend/.env.development
-backend/.env.test
-backend/.env.production
+backend/.env.*
+!backend/.env.example
+backend/.DS_Store
+
+# Generated prisma client and artifacts
+backend/generated/
+backend/prisma/dev.db
+backend/prisma/dev.sqlite
+
+# Ignore migration engine binaries and build artifacts
+prisma/migrations/**/*.lock
+prisma/migrations/**/migration.sql-journal
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS-specific files
+ehthumbs.db
+Desktop.ini
